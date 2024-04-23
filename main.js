@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+exports.Octal_decimal = exports.hexadecimal = exports.binary = exports.ScientificNotation = void 0;
+var Scientific_Notation = require("./src/scientificNotation");
+var BINARY = require("./src/binary");
+var HEXADECIMAL = require("./src/hexadecimal");
+var OCTAL_DECIMAL = require("./src/octalDecimal");
+exports.ScientificNotation = new Scientific_Notation();
+exports.binary = new BINARY();
+exports.hexadecimal = new HEXADECIMAL();
+exports.Octal_decimal = new OCTAL_DECIMAL();
