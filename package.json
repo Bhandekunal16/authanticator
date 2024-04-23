@@ -1,5 +1,14 @@
 {
   "devDependencies": {
     "@types/node": "^20.12.7"
-  }
+  },
+  "name": "authanticator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kunal bhande",
+  "license": "ISC",
+  "description": ""
 }
