@@ -3,7 +3,7 @@
     "@types/node": "^20.12.7"
   },
   "name": "authanticator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
