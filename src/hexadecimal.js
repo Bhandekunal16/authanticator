@@ -3,12 +3,10 @@ class Hexadecimal {
     try {
       const decimalNumber = parseInt(input);
       if (!isNaN(decimalNumber)) return decimalNumber.toString(16);
-      else {
-        const stringAsHex = [...input]
+      else
+        return [...input]
           .map((char) => char.charCodeAt(0).toString(16))
           .join("");
-        return stringAsHex;
-      }
     } catch (error) {
       return error;
     }
@@ -29,10 +27,9 @@ class Hexadecimal {
   hexToString(input) {
     try {
       const cleanedHexString = input.replace(/^0x/, "");
-      if (/^[0-9A-Fa-f]+$/.test(cleanedHexString)) {
-        const decodedString = this.hexStringToAscii(cleanedHexString);
-        return decodedString;
-      } else console.log("Invalid hexadecimal string.");
+      if (/^[0-9A-Fa-f]+$/.test(cleanedHexString))
+        return this.hexStringToAscii(cleanedHexString);
+      else console.log("Invalid hexadecimal string.");
     } catch (error) {
       return error;
     }
