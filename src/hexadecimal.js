@@ -2,10 +2,8 @@ class Hexadecimal {
   hexadecimalConvert(input) {
     try {
       const decimalNumber = parseInt(input);
-      if (!isNaN(decimalNumber)) {
-        const hexadecimalNumber = decimalNumber.toString(16);
-        return hexadecimalNumber;
-      } else {
+      if (!isNaN(decimalNumber)) return decimalNumber.toString(16);
+      else {
         const stringAsHex = [...input]
           .map((char) => char.charCodeAt(0).toString(16))
           .join("");
