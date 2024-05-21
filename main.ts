@@ -1,7 +1,9 @@
-const Scientific_Notation = require("./src/scientificNotation");
-const BINARY = require("./src/binary");
-const HEXADECIMAL = require("./src/hexadecimal");
-const OCTAL_DECIMAL = require("./src/octalDecimal");
+const [Scientific_Notation, BINARY, HEXADECIMAL, OCTAL_DECIMAL] = [
+  require("./src/scientificNotation"),
+  require("./src/binary"),
+  require("./src/hexadecimal"),
+  require("./src/octalDecimal"),
+];
 
 import scientificNotation from "./types/scientificNotation";
 import Binary from "./types/binary";
