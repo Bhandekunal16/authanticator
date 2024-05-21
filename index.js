@@ -1,7 +1,7 @@
 const application = require("./main");
 
 function Application() {
-  return application.binary.convertToBinary("a");
+  return application.ScientificNotation.convertToScientificNotation('172000');
 }
 
-Application();
+console.log(Application());
