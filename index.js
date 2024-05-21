@@ -1,7 +1,7 @@
-const Scientific_Notation = require("./main");
+const application = require("./main");
 
-function application() {
-  return Scientific_Notation.hexadecimal.hexToString('6b756e616c');
+function Application() {
+  return application.binary.convertToBinary("a");
 }
 
-console.log(application());
+Application();
