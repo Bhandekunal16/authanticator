@@ -15,10 +15,9 @@ class Hexadecimal {
   hexStringToAscii(hexString) {
     try {
       const hexPairs = hexString.match(/.{1,2}/g);
-      const asciiString = hexPairs
+      return hexPairs
         .map((hex) => String.fromCharCode(parseInt(hex, 16)))
         .join("");
-      return asciiString;
     } catch (error) {
       return error;
     }
