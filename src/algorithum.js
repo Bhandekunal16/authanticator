@@ -13,10 +13,14 @@ class Encryption {
   }
 
   async decrypt(publicKey, data) {
-    return await axios.post(`https://encryption-server.vercel.app/decrypt`, {
-      publicKey: publicKey,
-      data: data,
-    });
+    const res = await axios.post(
+      `https://encryption-server.vercel.app/decrypt`,
+      {
+        publicKey: publicKey,
+        data: data,
+      }
+    );
+    return res.data;
   }
 }
 
