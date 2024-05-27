@@ -1,20 +1,24 @@
 const axios = require("axios");
 
 class Encryption {
-  async encrypt() {
+  async encrypt(publicKey, data) {
     return await axios.post(`https://encryption-server.vercel.app/encrypt`, {
-      publicKey: "Robotic.js",
-      data: "hello",
+      publicKey: publicKey,
+      data: data,
     });
   }
 
   async decrypt() {
     return await axios.post(`https://encryption-server.vercel.app/decrypt`, {
-      publicKey: "Robotic.js",
-      data: "726f626f746963aGVsbG8=099f29be86cf77f32241bd81deb7038d37fbe4863bc66ab224f972133804ae0d",
+      publicKey: publicKey,
+      data: data,
     });
   }
 }
 
 module.exports = Encryption;
 
+new Encryption().decrypt().then((ele) => {
+  const ans = JSON.parse(ele.data.decrypted);
+  console.log(ans);
+});
