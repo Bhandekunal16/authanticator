@@ -1,45 +1,23 @@
-const [Hexadecimal, OctalDecimal, scientificNotation, Binary] = [
-  require("./hexadecimal"),
-  require("./octalDecimal"),
-  require("./scientificNotation"),
-  require("./binary"),
-];
+const axios = require("axios");
 
-class Algorithm {
-  encrypt(publicKey, data) {
-    try {
-      const [privateKey, tail] = [
-        new Binary().convertToBinary("Robotic"),
-        new Hexadecimal().hexadecimalConvert(publicKey),
-      ];
-      const head = new scientificNotation().convertToScientificNotation(
-        parseInt(privateKey)
-      );
-
-      const body =
-        data.length > 0 && typeof data == "object"
-          ? new OctalDecimal().octalArray(data)
-          : new OctalDecimal().octal(data);
-
-      return `${head}${body}${tail}`;
-    } catch (error) {
-      return error;
-    }
-  }
-
-  decrypt(publicKey, data) {
-    const [privateKey, tail] = [
-      new Binary().convertToBinary("Robotic"),
-      new Hexadecimal().hexadecimalConvert(publicKey),
-    ];
-    const head = new scientificNotation().convertToScientificNotation(
-      parseInt(privateKey)
-    );
-    const part1 = data.split(head).join("");
-    const part2 = part1.split(tail).join("");
-    const Final = new OctalDecimal().octalToString(part2);
-    return part2.includes(",") ? Final.split("").map(Number) : Final;
-  }
+async function encrypt() {
+  return await axios.post(`https://encryption-server.vercel.app/encrypt`, {
+    publicKey: "Robotic.js",
+    data: "hello",
+  });
 }
 
-module.exports = Algorithm;
+async function decrypt() {
+  return await axios.post(`https://encryption-server.vercel.app/decrypt`, {
+    publicKey: "Robotic.js",
+    data: "726f626f746963aGVsbG8=099f29be86cf77f32241bd81deb7038d37fbe4863bc66ab224f972133804ae0d",
+  });
+}
+
+encrypt().then((ele) => {
+  console.log(ele.data);
+});
+
+decrypt().then((ele) => {
+  console.log(ele.data);
+});
