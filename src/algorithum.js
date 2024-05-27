@@ -28,11 +28,14 @@ class Algorithm {
   }
 
   decrypt(publicKey, data) {
-    const privateKey = new Binary().convertToBinary("Robotic");
+    const [privateKey, tail] = [
+      new Binary().convertToBinary("Robotic"),
+      new Hexadecimal().hexadecimalConvert(publicKey),
+    ];
+
     const head = new scientificNotation().convertToScientificNotation(
       parseInt(privateKey)
     );
-    const tail = new Hexadecimal().hexadecimalConvert(publicKey);
     const part1 = data.split(head).join("");
     const part2 = part1.split(tail).join("");
     const Final = new OctalDecimal().octalToString(part2);
