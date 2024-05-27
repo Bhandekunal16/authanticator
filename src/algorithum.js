@@ -25,3 +25,5 @@ class Encryption {
 }
 
 module.exports = Encryption;
+exports.Encryption = Encryption;
+
