@@ -18,7 +18,7 @@ class Encryption {
 
 module.exports = Encryption;
 
-new Encryption().decrypt().then((ele) => {
+new Encryption().encrypt().then((ele) => {
   const ans = JSON.parse(ele.data.decrypted);
   console.log(ans);
 });
