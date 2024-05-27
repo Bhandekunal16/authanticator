@@ -20,6 +20,7 @@ class Algorithm {
         data.length > 0 && typeof data == "object"
           ? new OctalDecimal().octalArray(data)
           : new OctalDecimal().octal(data);
+
       return `${head}${body}${tail}`;
     } catch (error) {
       return error;
