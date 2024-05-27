@@ -41,9 +41,3 @@ class Algorithm {
 }
 
 module.exports = Algorithm;
-
-console.log(
-  new Algorithm().decrypt("172000", "1.01e+5461,62,63,64,65,66,67,70,7129fe0")
-);
-
-console.log(new Algorithm().encrypt("172000", [1, 2, 3, 4, 5, 6, 7, 8, 9]));
