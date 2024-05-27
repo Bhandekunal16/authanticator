@@ -32,7 +32,6 @@ class Algorithm {
       new Binary().convertToBinary("Robotic"),
       new Hexadecimal().hexadecimalConvert(publicKey),
     ];
-
     const head = new scientificNotation().convertToScientificNotation(
       parseInt(privateKey)
     );
