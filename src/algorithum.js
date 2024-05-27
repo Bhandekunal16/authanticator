@@ -8,11 +8,14 @@ const [Hexadecimal, OctalDecimal, scientificNotation, Binary] = [
 class Algorithm {
   encrypt(publicKey, data) {
     try {
-      const privateKey = new Binary().convertToBinary("Robotic");
-      const tail = new Hexadecimal().hexadecimalConvert(publicKey);
+      const [privateKey, tail] = [
+        new Binary().convertToBinary("Robotic"),
+        new Hexadecimal().hexadecimalConvert(publicKey),
+      ];
       const head = new scientificNotation().convertToScientificNotation(
         parseInt(privateKey)
       );
+
       const body =
         data.length > 0 && typeof data == "object"
           ? new OctalDecimal().octalArray(data)
