@@ -14,8 +14,12 @@ class Main {
     this.octalDecimal = new OctalDecimal();
     this.encryption = new Encryption();
   }
+
+  convertToScientificNotation(input) {
+    return this.scientificNotation.convertToScientificNotation(input);
+  }
 }
 
 module.exports = Main;
 
-// ? console.log(new Main().binary.convertToBinary("kunal"));
+ console.log(new Main().convertToScientificNotation(11));
