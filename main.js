@@ -6,7 +6,7 @@ const [scientificNotation, Binary, Hexadecimal, OctalDecimal, Encryption] = [
   require("./src/algorithm"),
 ];
 
-class Main {
+class Core {
   constructor() {
     this.scientificNotation = new scientificNotation();
     this.binary = new Binary();
@@ -15,11 +15,6 @@ class Main {
     this.encryption = new Encryption();
   }
 
-  convertToScientificNotation(input) {
-    return this.scientificNotation.convertToScientificNotation(input);
-  }
 }
 
-module.exports = Main;
-
- console.log(new Main().convertToScientificNotation(11));
+module.exports = Core;
