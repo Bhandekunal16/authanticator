@@ -188,3 +188,6 @@ Octal_decimal.octalToString(input: string): string;
 const OctalDecimal = require("authanticator/OctalDecimal");
 new OctalDecimal().octalToString(input);
 ```
+# scientific Notation Conversion
+
+### scientific Notation conversion
