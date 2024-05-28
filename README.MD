@@ -108,5 +108,9 @@ new binary().convertToString(input);
 
 ```typescript
 import { hexadecimal } from "authanticator/main";
-hexadecimalConvert(input: string): string;
+hexadecimal.hexadecimalConvert(input: string): string;
+```
+```javascript
+const Hexadecimal = require('authanticator/Hexadecimal')
+new Hexadecimal().hexadecimalConvert(input)
 ```
