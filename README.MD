@@ -144,6 +144,7 @@ hexadecimal.hexToString(input: string): string;
 const Hexadecimal = require("authanticator/Hexadecimal");
 new Hexadecimal().hexToString(input);
 ```
+
 # OctalDecimal Conversion
 
 ### OctalDecimal conversion
@@ -152,6 +153,7 @@ new Hexadecimal().hexToString(input);
 - **Purpose**: take input and convert that into OctalDecimal format.
 
 ## Usage
+
 ### Typescript
 
 ```typescript
