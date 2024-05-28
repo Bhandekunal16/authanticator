@@ -5,6 +5,7 @@
   "name": "robotic-authenticator",
   "version": "1.0.2",
   "main": "index.js",
+  "keywords": [ "language"],
   "language": "JavaScript",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
