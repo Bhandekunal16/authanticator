@@ -197,4 +197,4 @@ new scientificNotation().convertToScientificNotation(input);
 ```
 # Dependent on
 ### axios
-### Robotic JS
+### robotic.js
