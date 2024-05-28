@@ -73,5 +73,5 @@ binary.convertToBinary(input: string): string;
 
 ```javascript
 const binary = require("authanticator/src/binary");
-new binary().convertToBinary(input)
+new binary().convertToBinary(input);
 ```
