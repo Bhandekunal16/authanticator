@@ -39,14 +39,14 @@ Use the `decryption` function to decrypt your data with a public key.
 ### Typescript
 
 ```typescript
-import {Encryption } from 'authanticator/main';
+import {Encryption } from 'authanticator/type/main';
 Encryption.decrypt(publicKey: string, data: any): Object;
 ```
 
 ### Javascript
 
 ```javascript
-const Encryption = require("authanticator/Encryption");
+const Encryption = require("authanticator/src/Encryption");
 new Encryption().decrypt(publicKey, data);
 ```
 
@@ -67,6 +67,11 @@ new Encryption().decrypt(publicKey, data);
 ### Typescript
 
 ```typescript
-import {binary } from 'authanticator/main';
+import {binary } from 'authanticator/type/main';
 binary.convertToBinary(input: string): string;
+```
+
+```javascript
+const binary = require("authanticator/src/binary");
+new binary().convertToBinary(input)
 ```
