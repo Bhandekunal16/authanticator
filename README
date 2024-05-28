@@ -1,8 +1,8 @@
 Encryption
-  Features
-    . encryption: Encrypts data using a public key and a specific data pattern. This ensures that the data can only be decrypted by the corresponding private key.
-    . decryption: Decrypts data using a public key and a specific data pattern. This allows the retrieval of the original data that was encrypted with the corresponding public key.
+Features
+. encryption: Encrypts data using a public key and a specific data pattern. This ensures that the data can only be decrypted by the corresponding private key.
+. decryption: Decrypts data using a public key and a specific data pattern. This allows the retrieval of the original data that was encrypted with the corresponding public key.
 
 Usage
-  Encryption
-  Use the encryption function to encrypt your data with a public key.
+Encryption
+Use the encryption function to encrypt your data with a public key.
