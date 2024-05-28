@@ -71,6 +71,8 @@ import {binary } from 'authanticator/main';
 binary.convertToBinary(input: string): string;
 ```
 
+### Javascript
+
 ```javascript
 const binary = require("authanticator/src/binary");
 new binary().convertToBinary(input);
@@ -89,6 +91,7 @@ new binary().convertToBinary(input);
 import {binary } from 'authanticator/main';
 binary.convertToString(input: string): string;
 ```
+### Javascript
 
 ```javascript
 const binary = require("authanticator/src/binary");
@@ -110,6 +113,8 @@ new binary().convertToString(input);
 import { hexadecimal } from "authanticator/main";
 hexadecimal.hexadecimalConvert(input: string): string;
 ```
+
+### Javascript
 
 ```javascript
 const Hexadecimal = require("authanticator/Hexadecimal");
