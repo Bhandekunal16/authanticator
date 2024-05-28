@@ -20,7 +20,7 @@ Use the `encryption` function to encrypt your data with a public key.
 
 ### Typescript
 ```typescript
-  import {cEncryption } from 'authanticator/main';
+  import {Encryption } from 'authanticator/main';
   Encryption.encrypt(publicKey: string, data: any): Object;
 ```
 
@@ -35,7 +35,7 @@ new Encryption().encrypt(publicKey, data);
 Use the `decryption` function to decrypt your data with a public key.
 
 ```typescript
-import {cEncryption } from 'authanticator/main';
+import {Encryption } from 'authanticator/main';
 Encryption.decrypt(publicKey: string, data: any): Object;
 ```
 
