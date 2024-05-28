@@ -34,9 +34,16 @@ new Encryption().encrypt(publicKey, data);
 
 Use the `decryption` function to decrypt your data with a public key.
 
+### Typescript
 ```typescript
 import {Encryption } from 'authanticator/main';
 Encryption.decrypt(publicKey: string, data: any): Object;
+```
+
+### Javascript
+```javascript
+const Encryption = require("authanticator/Encryption");
+new Encryption().decrypt(publicKey, data);
 ```
 
 ## Example
