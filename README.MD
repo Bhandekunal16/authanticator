@@ -179,12 +179,12 @@ new OctalDecimal().octal(input);
 
 ```typescript
 import { Octal_decimal } from "authanticator/main";
-Octal_decimal.octal(input: string): string;
+Octal_decimal.octalToString(input: string): string;
 ```
 
 ### Javascript
 
 ```javascript
 const OctalDecimal = require("authanticator/OctalDecimal");
-new OctalDecimal().octal(input);
+new OctalDecimal().octalToString(input);
 ```
