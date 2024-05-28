@@ -75,6 +75,7 @@ binary.convertToBinary(input: string): string;
 const binary = require("authanticator/src/binary");
 new binary().convertToBinary(input);
 ```
+
 ### Convert binary string into the string
 
 - **Functionality**: take binary input and convert it into the string.
@@ -97,13 +98,15 @@ new binary().convertToString(input);
 # Hexadecimal conversion
 
 ### hexadecimal conversion
+
 - **Functionality**: take input and convert that into hexadecimal format.
 - **Purpose**: take input and convert that into hexadecimal format.
 
 ## Usage
 
 ### Typescript
+
 ```typescript
-
-
+import { hexadecimal } from "authanticator/main";
+hexadecimalConvert(input: string): string;
 ```
