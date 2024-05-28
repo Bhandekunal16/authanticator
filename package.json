@@ -2,7 +2,7 @@
   "devDependencies": {
     "@types/node": "^20.12.12"
   },
-  "name": "authanticator",
+  "name": "authenticator",
   "version": "1.0.4",
   "main": "index.js",
   "scripts": {
