@@ -19,7 +19,7 @@
 Use the `encryption` function to encrypt your data with a public key.
 
 ```javascript
-  encrypt(publicKey: string, data: any): Object;
+  Encryption.encrypt(publicKey: string, data: any): Object;
 ```
 
 ### Decryption
@@ -27,7 +27,7 @@ Use the `encryption` function to encrypt your data with a public key.
 Use the `decryption` function to decrypt your data with a public key.
 
 ```javascript
-decrypt(publicKey: string, data: any): Object;
+Encryption.decrypt(publicKey: string, data: any): Object;
 ```
 
 ## Example
