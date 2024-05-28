@@ -191,3 +191,24 @@ new OctalDecimal().octalToString(input);
 # scientific Notation Conversion
 
 ### scientific Notation conversion
+
+### scientific Notation conversion
+
+- **Functionality**: take input and convert that into scientific Notation format.
+- **Purpose**: take input and convert that into scientific Notation format.
+
+## Usage
+
+### Typescript
+
+```typescript
+import { Octal_decimal } from "authanticator/main";
+Octal_decimal.octal(input: string): string;
+```
+
+### Javascript
+
+```javascript
+const OctalDecimal = require("authanticator/OctalDecimal");
+new OctalDecimal().octal(input);
+```
