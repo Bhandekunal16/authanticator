@@ -152,3 +152,16 @@ new Hexadecimal().hexToString(input);
 - **Purpose**: take input and convert that into OctalDecimal format.
 
 ## Usage
+### Typescript
+
+```typescript
+import { Octal_decimal } from "authanticator/main";
+Octal_decimal.octal(input: string): string;
+```
+
+### Javascript
+
+```javascript
+const OctalDecimal = require("authanticator/OctalDecimal");
+new OctalDecimal().octal(input);
+```
