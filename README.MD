@@ -91,6 +91,7 @@ new binary().convertToBinary(input);
 import {binary } from 'authanticator/main';
 binary.convertToString(input: string): string;
 ```
+
 ### Javascript
 
 ```javascript
@@ -119,4 +120,26 @@ hexadecimal.hexadecimalConvert(input: string): string;
 ```javascript
 const Hexadecimal = require("authanticator/Hexadecimal");
 new Hexadecimal().hexadecimalConvert(input);
+```
+
+# Hexadecimal to string conversion
+
+### hexadecimal to string conversion
+
+- **Functionality**: take hexadecimal input and convert that into normal format.
+- **Purpose**: take hexadecimal input and convert that into normal format.
+
+## Usage
+### Typescript
+
+```typescript
+import { hexadecimal } from "authanticator/main";
+hexadecimal.hexToString(input: string): string;
+```
+
+### Javascript
+
+```javascript
+const Hexadecimal = require("authanticator/Hexadecimal");
+new Hexadecimal().hexToString(input);
 ```
