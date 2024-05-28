@@ -18,11 +18,13 @@
 
 Use the `encryption` function to encrypt your data with a public key.
 
+### Typescript
 ```typescript
   import {cEncryption } from 'authanticator/main';
   Encryption.encrypt(publicKey: string, data: any): Object;
 ```
 
+### Javascript
 ```javascript
 const Encryption = require("authanticator/Encryption");
 new Encryption().encrypt(publicKey, data);
