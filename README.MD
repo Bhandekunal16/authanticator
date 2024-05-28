@@ -79,3 +79,17 @@ new binary().convertToBinary(input);
 
 - **Functionality**: take binary input and convert it into the string.
 - **Purpose**: take binary input and convert it into the string.
+
+## Usage
+
+### Typescript
+
+```typescript
+import {binary } from 'authanticator/type/main';
+binary.convertToString(input: string): string;
+```
+
+```javascript
+const binary = require("authanticator/src/binary");
+new binary().convertToString(input);
+```
