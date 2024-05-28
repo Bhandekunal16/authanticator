@@ -93,3 +93,9 @@ binary.convertToString(input: string): string;
 const binary = require("authanticator/src/binary");
 new binary().convertToString(input);
 ```
+
+# Hexadecimal conversion
+
+### hexadecimal conversion
+- **Functionality**: take input and convert that into hexadecimal format.
+- **Purpose**: take input and convert that into hexadecimal format.
