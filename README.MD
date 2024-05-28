@@ -130,6 +130,7 @@ new Hexadecimal().hexadecimalConvert(input);
 - **Purpose**: take hexadecimal input and convert that into normal format.
 
 ## Usage
+
 ### Typescript
 
 ```typescript
