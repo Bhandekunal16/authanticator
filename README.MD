@@ -23,6 +23,11 @@ Use the `encryption` function to encrypt your data with a public key.
   Encryption.encrypt(publicKey: string, data: any): Object;
 ```
 
+```javascript
+  const Encryption = require('authanticator/Encryption')
+  new Encryption().encrypt(publicKey: string, data: any): Object;
+```
+
 ### Decryption
 
 Use the `decryption` function to decrypt your data with a public key.
