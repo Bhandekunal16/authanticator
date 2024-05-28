@@ -26,20 +26,8 @@ Use the `encryption` function to encrypt your data with a public key.
 
 Use the `decryption` function to decrypt your data with a public key.
 
-```python
-def decrypt(encrypted_data: str, public_key: str) -> str:
-    """
-    Decrypts the given encrypted data using the provided public key.
-
-    Parameters:
-        encrypted_data (str): The data to be decrypted.
-        public_key (str): The public key used for decryption.
-
-    Returns:
-        str: The decrypted original data.
-    """
-    # Your decryption logic here
-    pass
+```javascript
+decrypt(publicKey: string, data: any): Object;
 ```
 
 ## Example
