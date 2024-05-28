@@ -18,20 +18,8 @@
 
 Use the `encryption` function to encrypt your data with a public key.
 
-```python
-def encrypt(data: str, public_key: str) -> str:
-    """
-    Encrypts the given data using the provided public key.
-
-    Parameters:
-        data (str): The data to be encrypted.
-        public_key (str): The public key used for encryption.
-
-    Returns:
-        str: The encrypted data.
-    """
-    # Your encryption logic here
-    pass
+```javascript
+  encrypt(publicKey: string, data: any): Object;
 ```
 
 ### Decryption
