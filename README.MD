@@ -18,7 +18,8 @@
 
 Use the `encryption` function to encrypt your data with a public key.
 
-```javascript
+```typescript
+  import {cEncryption } from 'authanticator/main';
   Encryption.encrypt(publicKey: string, data: any): Object;
 ```
 
@@ -26,7 +27,8 @@ Use the `encryption` function to encrypt your data with a public key.
 
 Use the `decryption` function to decrypt your data with a public key.
 
-```javascript
+```typescript
+import {cEncryption } from 'authanticator/main';
 Encryption.decrypt(publicKey: string, data: any): Object;
 ```
 
