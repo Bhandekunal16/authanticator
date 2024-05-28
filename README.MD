@@ -195,3 +195,6 @@ ScientificNotation.convertToScientificNotation(input: string): string;
 const scientificNotation = require("authanticator/src/scientificNotation");
 new scientificNotation().convertToScientificNotation(input);
 ```
+# Dependent on
+### axios
+### Robotic JS
