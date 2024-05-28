@@ -45,27 +45,6 @@ Encryption.decrypt(publicKey: string, data: any): Object;
 const Encryption = require("authanticator/Encryption");
 new Encryption().decrypt(publicKey, data);
 ```
-
-## Example
-
-### Encryption Example
-
-```python
-public_key = "your_public_key_here"
-data = "your_data_here"
-encrypted_data = encrypt(data, public_key)
-print(f"Encrypted Data: {encrypted_data}")
-```
-
-### Decryption Example
-
-```python
-public_key = "your_public_key_here"
-encrypted_data = "your_encrypted_data_here"
-decrypted_data = decrypt(encrypted_data, public_key)
-print(f"Decrypted Data: {decrypted_data}")
-```
-
 ## Notes
 
 - Ensure that the public key used for encryption matches the private key used for decryption.
