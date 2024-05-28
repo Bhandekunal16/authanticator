@@ -39,7 +39,7 @@ Use the `decryption` function to decrypt your data with a public key.
 ### Typescript
 
 ```typescript
-import {Encryption } from 'authanticator/type/main';
+import {Encryption } from 'authanticator/main';
 Encryption.decrypt(publicKey: string, data: any): Object;
 ```
 
@@ -67,7 +67,7 @@ new Encryption().decrypt(publicKey, data);
 ### Typescript
 
 ```typescript
-import {binary } from 'authanticator/type/main';
+import {binary } from 'authanticator/main';
 binary.convertToBinary(input: string): string;
 ```
 
@@ -85,7 +85,7 @@ new binary().convertToBinary(input);
 ### Typescript
 
 ```typescript
-import {binary } from 'authanticator/type/main';
+import {binary } from 'authanticator/main';
 binary.convertToString(input: string): string;
 ```
 
@@ -99,3 +99,11 @@ new binary().convertToString(input);
 ### hexadecimal conversion
 - **Functionality**: take input and convert that into hexadecimal format.
 - **Purpose**: take input and convert that into hexadecimal format.
+
+## Usage
+
+### Typescript
+```typescript
+
+
+```
