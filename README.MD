@@ -49,3 +49,10 @@ new Encryption().decrypt(publicKey, data);
 
 - Ensure that the public key used for encryption matches the private key used for decryption.
 - The specific data pattern used in encryption and decryption should be consistently applied to maintain data integrity.
+
+# Binary conversion
+  ### Convert to the binary
+
+- **Functionality**: take input and convert that into binary format.
+- **Purpose**: take input and convert that into binary format.
+
