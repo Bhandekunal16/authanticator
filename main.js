@@ -8,13 +8,48 @@ const [scientificNotation, Binary, Hexadecimal, OctalDecimal, Encryption] = [
 
 class Core {
   constructor() {
-    this.scientificNotation = new scientificNotation();
-    this.binary = new Binary();
-    this.hexadecimal = new Hexadecimal();
-    this.octalDecimal = new OctalDecimal();
-    this.encryption = new Encryption();
+    this.error = "invalid method";
   }
 
+  binary(method, input) {
+    try {
+      return new Binary()[method](...input);
+    } catch (error) {
+      return new Error(this.error);
+    }
+  }
+
+  ScientificNotation(method, input) {
+    try {
+      return new scientificNotation()[method](...input);
+    } catch (error) {
+      return new Error(this.error);
+    }
+  }
+
+  Hexadecimal(method, input) {
+    try {
+      return new Hexadecimal()[method](...input);
+    } catch (error) {
+      return new Error(this.error);
+    }
+  }
+
+  OctalDecimal(method, input) {
+    try {
+      return new OctalDecimal()[method](...input);
+    } catch (error) {
+      return new Error(this.error);
+    }
+  }
+
+  Encryption(method, input) {
+    try {
+      return new Encryption()[method](...input);
+    } catch (error) {
+      return new Error(this.error);
+    }
+  }
 }
 
 module.exports = Core;
