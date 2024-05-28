@@ -24,6 +24,8 @@ class Encryption {
   }
 }
 
+// ? Type of exports the modules
 module.exports = Encryption;
 exports.Encryption = Encryption;
-
+exports['Encryption'] = Encryption;
+// 
