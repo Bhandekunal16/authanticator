@@ -110,7 +110,8 @@ new binary().convertToString(input);
 import { hexadecimal } from "authanticator/main";
 hexadecimal.hexadecimalConvert(input: string): string;
 ```
+
 ```javascript
-const Hexadecimal = require('authanticator/Hexadecimal')
-new Hexadecimal().hexadecimalConvert(input)
+const Hexadecimal = require("authanticator/Hexadecimal");
+new Hexadecimal().hexadecimalConvert(input);
 ```
