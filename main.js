@@ -16,6 +16,6 @@ class Main {
   }
 }
 
-exports["Main"] = Main;
+module.exports = Main;
 
 // ? console.log(new Main().binary.convertToBinary("kunal"));
