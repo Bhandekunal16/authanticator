@@ -202,13 +202,13 @@ new OctalDecimal().octalToString(input);
 ### Typescript
 
 ```typescript
-import { Octal_decimal } from "authanticator/main";
-Octal_decimal.octal(input: string): string;
+import { ScientificNotation } from "authanticator/main";
+ScientificNotation.convertToScientificNotation(input: string): string;
 ```
 
 ### Javascript
 
 ```javascript
-const OctalDecimal = require("authanticator/OctalDecimal");
-new OctalDecimal().octal(input);
+const scientificNotation = require("authanticator/scientificNotation");
+new scientificNotation().convertToScientificNotation(input);
 ```
