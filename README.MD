@@ -16,16 +16,16 @@
 
 ### Encryption
 
-Use the `encryption` function to encrypt your data with a public key.
+Use the `encrypt` function to encrypt your data with a public key.
 
-### Typescript
+#### Typescript
 
 ```typescript
-  import {Encryption } from 'authanticator/main';
-  Encryption.encrypt(publicKey: string, data: any): Object;
+import { Encryption } from 'authanticator/main';
+Encryption.encrypt(publicKey: string, data: any): Object;
 ```
 
-### Javascript
+#### Javascript
 
 ```javascript
 const Encryption = require("authanticator/Encryption");
@@ -34,16 +34,16 @@ new Encryption().encrypt(publicKey, data);
 
 ### Decryption
 
-Use the `decryption` function to decrypt your data with a public key.
+Use the `decrypt` function to decrypt your data with a public key.
 
-### Typescript
+#### Typescript
 
 ```typescript
-import {Encryption } from 'authanticator/main';
+import { Encryption } from 'authanticator/main';
 Encryption.decrypt(publicKey: string, data: any): Object;
 ```
 
-### Javascript
+#### Javascript
 
 ```javascript
 const Encryption = require("authanticator/src/Encryption");
@@ -55,161 +55,143 @@ new Encryption().decrypt(publicKey, data);
 - Ensure that the public key used for encryption matches the private key used for decryption.
 - The specific data pattern used in encryption and decryption should be consistently applied to maintain data integrity.
 
-# Binary conversion
+## Binary Conversion
 
-### Convert to the binary
+### Convert to Binary
 
-- **Functionality**: take input and convert that into binary format.
-- **Purpose**: take input and convert that into binary format.
+- **Functionality**: Converts input into binary format.
+- **Purpose**: Transforms data into a binary representation.
 
-## Usage
-
-### Typescript
+#### Typescript
 
 ```typescript
-import {binary } from 'authanticator/main';
+import { binary } from 'authanticator/main';
 binary.convertToBinary(input: string): string;
 ```
 
-### Javascript
+#### Javascript
 
 ```javascript
 const binary = require("authanticator/src/binary");
 new binary().convertToBinary(input);
 ```
 
-### Convert binary string into the string
+### Convert Binary to String
 
-- **Functionality**: take binary input and convert it into the string.
-- **Purpose**: take binary input and convert it into the string.
+- **Functionality**: Converts binary input into a string.
+- **Purpose**: Transforms binary data back into its original string format.
 
-## Usage
-
-### Typescript
+#### Typescript
 
 ```typescript
-import {binary } from 'authanticator/main';
+import { binary } from 'authanticator/main';
 binary.convertToString(input: string): string;
 ```
 
-### Javascript
+#### Javascript
 
 ```javascript
 const binary = require("authanticator/src/binary");
 new binary().convertToString(input);
 ```
 
-# Hexadecimal conversion
+## Hexadecimal Conversion
 
-### hexadecimal conversion
+### Convert to Hexadecimal
 
-- **Functionality**: take input and convert that into hexadecimal format.
-- **Purpose**: take input and convert that into hexadecimal format.
+- **Functionality**: Converts input into hexadecimal format.
+- **Purpose**: Transforms data into a hexadecimal representation.
 
-## Usage
-
-### Typescript
+#### Typescript
 
 ```typescript
 import { hexadecimal } from "authanticator/main";
 hexadecimal.hexadecimalConvert(input: string): string;
 ```
 
-### Javascript
+#### Javascript
 
 ```javascript
-const Hexadecimal = require("authanticator/Hexadecimal");
+const Hexadecimal = require("authanticator/src/Hexadecimal");
 new Hexadecimal().hexadecimalConvert(input);
 ```
 
-# Hexadecimal to string conversion
+### Convert Hexadecimal to String
 
-### hexadecimal to string conversion
+- **Functionality**: Converts hexadecimal input into a string.
+- **Purpose**: Transforms hexadecimal data back into its original string format.
 
-- **Functionality**: take hexadecimal input and convert that into normal format.
-- **Purpose**: take hexadecimal input and convert that into normal format.
-
-## Usage
-
-### Typescript
+#### Typescript
 
 ```typescript
 import { hexadecimal } from "authanticator/main";
 hexadecimal.hexToString(input: string): string;
 ```
 
-### Javascript
+#### Javascript
 
 ```javascript
-const Hexadecimal = require("authanticator/Hexadecimal");
+const Hexadecimal = require("authanticator/src/Hexadecimal");
 new Hexadecimal().hexToString(input);
 ```
 
-# OctalDecimal Conversion
+## Octal Conversion
 
-### OctalDecimal conversion
+### Convert to Octal
 
-- **Functionality**: take input and convert that into OctalDecimal format.
-- **Purpose**: take input and convert that into OctalDecimal format.
+- **Functionality**: Converts input into octal format.
+- **Purpose**: Transforms data into an octal representation.
 
-## Usage
-
-### Typescript
+#### Typescript
 
 ```typescript
 import { Octal_decimal } from "authanticator/main";
 Octal_decimal.octal(input: string): string;
 ```
 
-### Javascript
+#### Javascript
 
 ```javascript
-const OctalDecimal = require("authanticator/OctalDecimal");
+const OctalDecimal = require("authanticator/src/OctalDecimal");
 new OctalDecimal().octal(input);
 ```
 
-### OctalDecimal to string conversion
+### Convert Octal to String
 
-- **Functionality**: take input OctalDecimal format and convert that into string.
-- **Purpose**: take input OctalDecimal format and convert that into string.
+- **Functionality**: Converts octal input into a string.
+- **Purpose**: Transforms octal data back into its original string format.
 
-## Usage
-
-### Typescript
+#### Typescript
 
 ```typescript
 import { Octal_decimal } from "authanticator/main";
 Octal_decimal.octalToString(input: string): string;
 ```
 
-### Javascript
+#### Javascript
 
 ```javascript
-const OctalDecimal = require("authanticator/OctalDecimal");
+const OctalDecimal = require("authanticator/src/OctalDecimal");
 new OctalDecimal().octalToString(input);
 ```
 
-# scientific Notation Conversion
+## Scientific Notation Conversion
 
-### scientific Notation conversion
+### Convert to Scientific Notation
 
-### scientific Notation conversion
+- **Functionality**: Converts input into scientific notation format.
+- **Purpose**: Transforms data into scientific notation for compact representation.
 
-- **Functionality**: take input and convert that into scientific Notation format.
-- **Purpose**: take input and convert that into scientific Notation format.
-
-## Usage
-
-### Typescript
+#### Typescript
 
 ```typescript
 import { ScientificNotation } from "authanticator/main";
 ScientificNotation.convertToScientificNotation(input: string): string;
 ```
 
-### Javascript
+#### Javascript
 
 ```javascript
-const scientificNotation = require("authanticator/scientificNotation");
+const scientificNotation = require("authanticator/src/scientificNotation");
 new scientificNotation().convertToScientificNotation(input);
 ```
