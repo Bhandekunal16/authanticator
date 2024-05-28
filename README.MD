@@ -167,3 +167,24 @@ Octal_decimal.octal(input: string): string;
 const OctalDecimal = require("authanticator/OctalDecimal");
 new OctalDecimal().octal(input);
 ```
+
+### OctalDecimal to string conversion
+
+- **Functionality**: take input OctalDecimal format and convert that into string.
+- **Purpose**: take input OctalDecimal format and convert that into string.
+
+## Usage
+
+### Typescript
+
+```typescript
+import { Octal_decimal } from "authanticator/main";
+Octal_decimal.octal(input: string): string;
+```
+
+### Javascript
+
+```javascript
+const OctalDecimal = require("authanticator/OctalDecimal");
+new OctalDecimal().octal(input);
+```
