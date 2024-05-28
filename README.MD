@@ -75,3 +75,7 @@ binary.convertToBinary(input: string): string;
 const binary = require("authanticator/src/binary");
 new binary().convertToBinary(input);
 ```
+### Convert binary string into the string
+
+- **Functionality**: take binary input and convert it into the string.
+- **Purpose**: take binary input and convert it into the string.
