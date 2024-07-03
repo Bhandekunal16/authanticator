@@ -1,9 +1,7 @@
 class OctalDecimal {
   octal(input) {
     try {
-      if (typeof input === "number") {
-        input = input.toString();
-      }
+      if (typeof input === "number") input = input.toString();
       let octalNumber = "";
       for (let i = 0; i < input.length; i++) {
         const char = input[i];
@@ -18,10 +16,7 @@ class OctalDecimal {
 
   octalArray(input) {
     try {
-      if (!Array.isArray(input)) {
-        throw new Error("Input must be an array");
-      }
-
+      if (!Array.isArray(input)) throw new Error("Input must be an array");
       let octalArray = input.map((element) => {
         let elementStr = element.toString();
         let octalStr = "";
@@ -32,7 +27,6 @@ class OctalDecimal {
         }
         return octalStr;
       });
-
       return octalArray;
     } catch (error) {
       return error.message;
