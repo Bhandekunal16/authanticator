@@ -18,8 +18,7 @@ class OctalDecimal {
     try {
       if (!Array.isArray(input)) throw new Error("Input must be an array");
       let octalArray = input.map((element) => {
-        let elementStr = element.toString();
-        let octalStr = "";
+        let [elementStr, octalStr] = [element.toString(), ""];
         for (let i = 0; i < elementStr.length; i++) {
           const char = elementStr[i];
           const octalChar = char.charCodeAt(0).toString(8);
