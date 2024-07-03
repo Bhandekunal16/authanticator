@@ -24,10 +24,4 @@ class Encryption {
   }
 }
 
-// ? Type of exports the modules
 module.exports = Encryption;
-exports.Encryption = Encryption;
-exports['Encryption'] = Encryption;
-// * 1) exports module in normal way
-// * 2) exports module in named way
-// * 3) exports module in named way
