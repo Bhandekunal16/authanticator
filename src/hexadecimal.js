@@ -26,9 +26,9 @@ class Hexadecimal {
   hexToString(input) {
     try {
       const cleanedHexString = input.replace(/^0x/, "");
-      if (/^[0-9A-Fa-f]+$/.test(cleanedHexString))
-        return this.hexStringToAscii(cleanedHexString);
-      else console.log("Invalid hexadecimal string.");
+      return /^[0-9A-Fa-f]+$/.test(cleanedHexString)
+        ? this.hexStringToAscii(cleanedHexString)
+        : console.log("Invalid hexadecimal string.");
     } catch (error) {
       return error;
     }
