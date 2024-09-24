@@ -1,4 +1,12 @@
+const Logger = require("robotic.js/src/interface/Logger");
+
 class Hexadecimal {
+  #logger;
+
+  constructor() {
+    this.#logger = new Logger();
+  }
+
   hexadecimalConvert(input) {
     try {
       const decimalNumber = parseInt(input);
@@ -12,7 +20,7 @@ class Hexadecimal {
     }
   }
 
-  hexStringToAscii(hexString) {
+  #hexStringToAscii(hexString) {
     try {
       const hexPairs = hexString.match(/.{1,2}/g);
       return hexPairs
@@ -27,8 +35,8 @@ class Hexadecimal {
     try {
       const cleanedHexString = input.replace(/^0x/, "");
       return /^[0-9A-Fa-f]+$/.test(cleanedHexString)
-        ? this.hexStringToAscii(cleanedHexString)
-        : console.log("Invalid hexadecimal string.");
+        ? this.#hexStringToAscii(cleanedHexString)
+        : this.#logger.log("Invalid hexadecimal string.");
     } catch (error) {
       throw error;
     }
