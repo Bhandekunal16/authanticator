@@ -10,7 +10,7 @@ class OctalDecimal {
       }
       return octalNumber;
     } catch (error) {
-      return error.message;
+      throw error.message;
     }
   }
 
@@ -28,7 +28,7 @@ class OctalDecimal {
       });
       return octalArray;
     } catch (error) {
-      return error.message;
+      throw error.message;
     }
   }
 
@@ -43,7 +43,7 @@ class OctalDecimal {
       });
       return resultString;
     } catch (error) {
-      return error.message;
+      throw error.message;
     }
   }
 }
