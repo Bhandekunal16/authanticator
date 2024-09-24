@@ -7,6 +7,8 @@ const [scientificNotation, Binary, Hexadecimal, OctalDecimal, Encryption] = [
 ];
 
 class Core {
+  error;
+
   constructor() {
     this.error = "invalid method";
   }
