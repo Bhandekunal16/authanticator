@@ -1,13 +1,19 @@
 const Response = require("robotic.js/src/class/response");
 
 class Binary {
+  #response;
+
+  constructor() {
+    this.#response = new Response();
+  }
+
   convertToBinary(input) {
     try {
       if (input == undefined)
-        return new Response().badRequest("input not be undefined");
+        return this.#response.badRequest("input not be undefined");
 
       if (typeof input !== "string")
-        throw new Response().badRequest("Input must be a string");
+        throw this.#response.badRequest("Input must be a string");
 
       let binary = "";
       for (let i = 0; i < input.length; i++) {
@@ -16,7 +22,7 @@ class Binary {
       }
       return binary;
     } catch (error) {
-      return new Response().error(error);
+      throw this.#response.error(error);
     }
   }
 
@@ -25,10 +31,10 @@ class Binary {
       let string = "";
 
       if (input == undefined)
-        return new Response().badRequest("input not be undefined");
+        return this.#response.badRequest("input not be undefined");
 
       if (typeof input !== "string")
-        throw new Response().badRequest("Input must be a string");
+        throw this.#response.badRequest("Input must be a string");
 
       for (let i = 0; i < input.length; i += 8) {
         let binaryCode = input.substr(i, 8);
@@ -38,7 +44,7 @@ class Binary {
 
       return string;
     } catch (error) {
-      return error;
+      throw this.#response.error(error);
     }
   };
 
