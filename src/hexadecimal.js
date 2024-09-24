@@ -8,7 +8,7 @@ class Hexadecimal {
           .map((char) => char.charCodeAt(0).toString(16))
           .join("");
     } catch (error) {
-      return error;
+      throw error;
     }
   }
 
@@ -19,7 +19,7 @@ class Hexadecimal {
         .map((hex) => String.fromCharCode(parseInt(hex, 16)))
         .join("");
     } catch (error) {
-      return error;
+      throw error;
     }
   }
 
@@ -30,7 +30,7 @@ class Hexadecimal {
         ? this.hexStringToAscii(cleanedHexString)
         : console.log("Invalid hexadecimal string.");
     } catch (error) {
-      return error;
+      throw error;
     }
   }
 }
