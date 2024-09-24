@@ -18,7 +18,7 @@ class Binary {
       let binary = "";
       for (let i = 0; i < input.length; i++) {
         let charCode = input.charCodeAt(i).toString(2);
-        binary += this.padLeft(charCode, 8);
+        binary += this.#padLeft(charCode, 8);
       }
       return binary;
     } catch (error) {
@@ -48,7 +48,7 @@ class Binary {
     }
   };
 
-  padLeft(str, length) {
+  #padLeft(str, length) {
     return "0".repeat(length - str.length) + str;
   }
 }
