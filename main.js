@@ -7,17 +7,17 @@ const [scientificNotation, Binary, Hexadecimal, OctalDecimal, Encryption] = [
 ];
 
 class Core {
-  error;
+  #Error;
 
   constructor() {
-    this.error = "invalid method";
+    this.#Error = new Error("internal server error");
   }
 
   binary(method, input) {
     try {
       return new Binary()[method](...input);
     } catch (error) {
-      return new Error(this.error);
+      return this.#Error;
     }
   }
 
@@ -25,7 +25,7 @@ class Core {
     try {
       return new scientificNotation()[method](...input);
     } catch (error) {
-      return new Error(this.error);
+      return this.#Error;
     }
   }
 
@@ -33,7 +33,7 @@ class Core {
     try {
       return new Hexadecimal()[method](...input);
     } catch (error) {
-      return new Error(this.error);
+      return this.#Error;
     }
   }
 
@@ -41,7 +41,7 @@ class Core {
     try {
       return new OctalDecimal()[method](...input);
     } catch (error) {
-      return new Error(this.error);
+      return this.#Error;
     }
   }
 
@@ -49,7 +49,7 @@ class Core {
     try {
       return new Encryption()[method](...input);
     } catch (error) {
-      return new Error(this.error);
+      return this.#Error;
     }
   }
 }
